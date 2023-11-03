@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Roboto:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Roboto:500" rel="stylesheet">   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -27,7 +28,7 @@
       <nav>
         <div class="logo">
           <a href="index.html">
-            <img src="./asset//images/Logo.png" width="85" alt="" />
+            <img src="./asset//images/bg.png" width="275" height="200" alt="" class="bg-cover "/>
           </a>
         </div>
         <input type="checkbox" id="menu-toggle" />
@@ -82,7 +83,7 @@
                 <a href="#_" class="relative inline-block text-lg group mt-12">
                   <button class="btn">SEE MORE</button>
                 </a>
- <div class="text-white opacity-5 md:opacity-5 xl:opacity-40 absolute right-28 bottom-36 p-28" style="background-image:url(./asset/images/tech.svg) ; background-repeat: no-repeat;"></div>
+ <div class="text-white opacity-5 md:opacity-5 xl:opacity-40 absolute right-28 bottom-20 p-28" style="background-image:url(./asset/images/tech.svg) ; background-repeat: no-repeat;"></div>
 </div>
           </div>
         </div>
@@ -133,6 +134,7 @@
 
 
     <script>
+
       gsap.fromTo(
         ".h1",
         { y: 100, opacity: 0 },
@@ -151,6 +153,8 @@
         ".text-white",{x: 30,},
         {x: 0,stagger: 1,duration: 2,ease: "in",
         });
+        gsap.registerPlugin(ScrollTrigger);
+
     </script>
 
   </body>
