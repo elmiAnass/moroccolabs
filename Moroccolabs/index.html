@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Roboto:500" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./asset/css/style.css" />
+  </head>
+  <body>
+
+
+    <header class="header">
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="./asset//images/Logo.png" width="85" alt="" />
+          </a>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Project </a></li>
+          <li><a href="#">Blog </a></li>
+          <li><a href="#">Our Engineering Teams </a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <!-- hero -->
+    <div class="bg-black h-[40rem]">
+      <div class="mx-auto max-w-7xl pt-20 sm:pt-36">
+        <div class="space-y-8 lg:space-y-0">
+          <div class="px-6 md:mx-auto">
+            <div class="space-y-12">
+              <div class="space-y-10">
+                <div class="space-y-2">
+                  <h1
+                    class="h1 text-5xl font-bold tracking-tight text-white sm:text-5xl md:text-7xl"
+                  >
+                    <span class="sm:text-6xl"> </span> National Institute of
+                    <span
+                      class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-600"
+                    >
+                      Innovation
+                    </span>
+                    and Advanced
+                    <span
+                      class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-green-600"
+                    >
+                      Technology
+                    </span>
+
+                    <br />
+                  </h1>
+                </div>
+
+                <p
+                  class="p text-base text-white/30 sm:mt-5 sm:text-md lg:text-md xl:text-md max-w-4xl mb-10"
+                >
+                The National Institute of Innovation and Advanced Technology (NIIAT) is a forward-thinking 
+                organization focused on promoting innovation,
+                 advancing technology, and empowering communities to create positive change and improve lives.
+                </p>
+
+                <a href="#_" class="relative inline-block text-lg group mt-12">
+                  <button class="btn">SEE MORE</button>
+                </a>
+ <div class="text-white opacity-5 md:opacity-5 xl:opacity-40 absolute right-28 bottom-36 p-28" style="background-image:url(./asset/images/tech.svg) ; background-repeat: no-repeat;"></div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>        
+    </section>
+
+</div>   
+
+    <!-- hero -->
+
+    <!--  About us -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      gsap.fromTo(
+        ".h1",
+        { y: 100, opacity: 0 },
+        { y: 0, opacity: 1, stagger: 0.05, duration: 2, ease: "power4.out" }
+      );
+      gsap.fromTo(
+        ".p",
+        { y: 100, opacity: 0 },
+        { y: 0, opacity: 1, stagger: 0.5, duration: 2, ease: "out" }
+      );
+      gsap.fromTo(
+        ".btn",{y: 100,opacity: 0,},
+        {y: 0,opacity: 1,stagger: 1,duration: 3,ease: "out",
+        });
+        gsap.fromTo(
+        ".text-white",{x: 30,},
+        {x: 0,stagger: 1,duration: 2,ease: "in",
+        });
+    </script>
+
+  </body>
+</html>
