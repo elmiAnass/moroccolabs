@@ -4,10 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Roboto:500" rel="stylesheet">   
+    <script src="./asset/js/script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,400i|Roboto:500"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/48764efa36.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -21,14 +32,18 @@
     </script>
     <link rel="stylesheet" href="./asset/css/style.css" />
   </head>
-  <body>
-
-
+  <bod class="bg-black ">
     <header class="header">
       <nav>
         <div class="logo">
           <a href="index.html">
-            <img src="./asset//images/bg.png" width="275" height="200" alt="" class="bg-cover "/>
+            <img
+              src="./asset//images/bg.png"
+              width="275"
+              height="200"
+              alt=""
+              class="bg-cover"
+            />
           </a>
         </div>
         <input type="checkbox" id="menu-toggle" />
@@ -43,9 +58,8 @@
       </nav>
     </header>
 
-
     <!-- hero -->
-    <div class="bg-black h-[40rem]">
+    <div class="bg-black h-[40rem] bg-black">
       <div class="mx-auto max-w-7xl pt-20 sm:pt-36">
         <div class="space-y-8 lg:space-y-0">
           <div class="px-6 md:mx-auto">
@@ -75,72 +89,343 @@
                 <p
                   class="p text-base text-white/30 sm:mt-5 sm:text-md lg:text-md xl:text-md max-w-4xl mb-10"
                 >
-                The National Institute of Innovation and Advanced Technology (NIIAT) is a forward-thinking 
-                organization focused on promoting innovation,
-                 advancing technology, and empowering communities to create positive change and improve lives.
+                  The National Institute of Innovation and Advanced Technology
+                  (NIIAT) is a forward-thinking organization focused on
+                  promoting innovation, advancing technology, and empowering
+                  communities to create positive change and improve lives.
                 </p>
 
                 <a href="#_" class="relative inline-block text-lg group mt-12">
                   <button class="btn">SEE MORE</button>
                 </a>
- <div class="text-white opacity-5 md:opacity-5 xl:opacity-40 absolute right-28 bottom-20 p-28" style="background-image:url(./asset/images/tech.svg) ; background-repeat: no-repeat;"></div>
-</div>
+                <div
+                  class="svg text-white opacity-5 md:opacity-5 xl:opacity-40 absolute right-28 bottom-20 p-28"
+                  style="
+                    background-image: url(./asset/images/tech.svg);
+                    background-repeat: no-repeat;
+                  "
+                ></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>        
-    </section>
-
-</div>   
+    </div>
+    
     <!-- hero -->
 
     <!--  About us -->
-<div class="content">
-  <h1 class="title">About us
-    <div class="aurora">
-      <div class="aurora__item"></div>
-      <div class="aurora__item"></div>
-      <div class="aurora__item"></div>
-      <div class="aurora__item"></div>
+    <div class="content">
+      <h1 class="title">
+        About us
+        <div class="aurora">
+          <div class="aurora__item"></div>
+          <div class="aurora__item"></div>
+          <div class="aurora__item"></div>
+          <div class="aurora__item"></div>
+        </div>
+      </h1>
     </div>
-  </h1>
-</div>
-<main>
-  
-</main>
+    <main class="bg-black">
+      <div class="mx-auto max-w-7xl mt-4 p-1 sm:mt-8">
+        <h1
+          class="text-2xl font-bold text-white sm:text-2xl md:text-2xl opacity-90 mb-4"
+        >
+          The National Institute of Innovation and Advanced Technology
+        </h1>
+        <p class="text-base text-white/50 max-w-6xl text-base mb-6">
+          The National Institute of Innovation and Advanced Technology (NIIAT)
+          is a dynamic and forward-thinking organization dedicated to fostering
+          innovation, advancing technology, and empowering communities. At
+          NIIAT, we are driven by a mission to harness the power of innovation
+          and cutting-edge technology to bring about positive change and improve
+          the lives of individuals and communities.
+          <br /><span class="border-b border-red-500">Our Mission: </span>"To
+          empower individuals and communities through innovation and advanced
+          technology, driving positive change, fostering economic growth, and
+          ensuring sustainable development."
+        </p>
+        <div>
+          <img
+            src="./asset/images/Logo.png"
+            alt=""
+            width="120"
+            class="float-right"
+          />
+        </div>
+      </div>
+      <div class="border-b border-white/20"></div>
+
+      <div class="mx-auto max-w-7xl mt-4 p-1 sm:mt-8">
+        <h1
+          class="text-2xl font-bold text-white sm:text-2xl md:text-2xl opacity-90 mb-4"
+        >
+          Key Aspects of the National Institute of Innovation and Advanced
+          Technology
+        </h1>
+        <p class="text-base text-white/50 max-w-6xl text-base mb-6">
+          Innovation Hub: NIIAT serves as an innovation hub, where creativity
+          and technology intersect to address pressing challenges. We encourage
+          out-of-the-box thinking and the development of groundbreaking
+          solutions that make a real impact. Cutting-Edge Technology: We are
+          committed to staying at the forefront of technological advancements.
+          Our organization embraces emerging technologies and ensures that they
+          are accessible to those who can benefit from them the most. Empowering
+          Communities: NIIAT focuses on the empowerment of communities,
+          particularly underserved and marginalized populations. We believe in
+          the potential of technology to bridge gaps and create opportunities
+          for all. Education and Skill Development: Education is a cornerstone
+          of our work. We provide educational programs and training to equip
+          individuals with the knowledge and skills needed for the digital age,
+          fostering lifelong learning. Sustainable Practices: Sustainability is
+          embedded in our ethos. We emphasize environmentally responsible
+          practices and support initiatives that promote a greener and more
+          sustainable future. Global Impact: While rooted in our local
+          community, NIIAT also has a global perspective. We seek to collaborate
+          with organizations and institutions worldwide to share knowledge,
+          expertise, and best practices. Collaborative Partnerships: We believe
+          in the power of partnerships. NIIAT collaborates with non-governmental
+          organizations, government agencies, businesses, and educational
+          institutions to achieve our mission.
+        </p>
+      </div>
+    </main>
+    <!--  -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="absolute overflow-hidden"
+      viewBox="0 0 1440 320"
+    >
+      <path
+        fill="#1e293b"
+        fill-opacity="1"
+        d="M0,64L48,58.7C96,53,192,43,288,58.7C384,75,480,117,576,149.3C672,181,768,203,864,181.3C960,160,1056,96,1152,101.3C1248,107,1344,181,1392,218.7L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+      ></path>
+    </svg>
+    <section
+      class="bg-[#1e293b]/40 md:p-0 transform duration-500 hover:shadow-2xl cursor-pointer hover:-translate-y-1 mt-12"
+    >
+      <img
+        class="xl:max-w-6xl"
+        src="https://media.licdn.com/dms/image/D5622AQEhOX_uLg7XrA/feedshare-shrink_1280/0/1695508197696?e=1701907200&v=beta&t=PGl3WszSuQS7sEdvHWj-Qo8FZ_-HotMMGFwhTRURFk8"
+        alt=""
+      />
+      <div
+        class="overflow-hidden bg-black border-1 border-white/40 p-2 pt-8 md:p-12 pb-12 lg:max-w-2xl w-full lg:absolute top-36 right-5 rounded-lg"
+      >
+        <div class="content">
+          <h1 class="title">
+            Vision Statement
+            <div class="aurora">
+              <div class="aurora__item"></div>
+              <div class="aurora__item"></div>
+              <div class="aurora__item"></div>
+              <div class="aurora__item"></div>
+            </div>
+          </h1>
+        </div>
+        <p class="font-sm text-white text-justify">
+          The vision statement for the National Institute of Innovation and
+          Advanced Technology reflects the organization's aspirations, long-term
+          goals, and the impact it seeks to achieve. Here's a vision statement
+          for your reference: "To be a National leader of innovation and
+          advanced technology, driving positive change, and empowering
+          communities. We envision a future where cutting-edge technology,
+          education, and sustainable practices are accessible to all,
+          transforming lives, spurring economic growth, and shaping a brighter,
+          more inclusive world." This vision statement highlights the
+          organization's commitment to innovation, technology, education,
+          sustainability, and inclusivity, conveying a sense of purpose and the
+          desired future it strives to create.
+        </p>
+      </div>
+    </section>
+    <!-- The social innovation initiatives  -->
+    <div class="bg-black overflow-hidden ">
+      <section
+        id="features"
+        class="relative block px-6 py-10 md:py-20 md:px-10 border-t border-b border-neutral-900 bg-neutral-900/30"
+      >
+        <div class="relative mx-auto max-w-5xl text-center">
+          <h2
+            class="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl"
+          >
+            The social innovation initiatives
+          </h2>
+          <p
+            class="mx-auto my-4 w-full text-justify max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400"
+          >
+            The social innovation initiatives of the National Institute of
+            Innovation and Advanced Technology (NIIAT) aim to drive positive
+            change and address societal challenges by leveraging innovation,
+            technology, and community engagement.
+          </p>
+        </div>
+
+        
+        <div
+          class="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          <div
+            class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
+          >
+            <h3 class="mt-6 text-gray-200/90 text-lg">
+              Digital Inclusion Programs:             </h3>
+            <p
+              class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
+            >
+            NIIAT promotes digital inclusion by providing technology access and training to underserved communities. This includes initiatives to bridge the digital divide by making digital tools and education accessible to all. 
+            </p>
+          </div>
+
+          <div
+            class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
+          >
+            <h3 class="mt-6 text-gray-200/90 text-lg">
+              Technological Solutions for Social Issues:
+            </h3>
+            <p
+              class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
+            >
+            NIIAT develops and supports projects that use technology to address social issues, such as healthcare access, environmental sustainability, and poverty reduction. This includes developing apps, platforms, and systems that positively impact society. 
+
+ 
+            </p>
+          </div>
+
+          <div
+            class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
+          >
+            <h3 class="mt-6 text-gray-200/90 text-lg">
+              Community-Centered Innovation:
+            </h3>
+            <p
+              class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
+            >
+              NIIAT collaborates closely with local communities to identify
+              their unique challenges and needs. It actively engages community
+              members in innovation, ensuring that solutions are relevant and
+              beneficial.
+            </p>
+          </div>
+
+          
+            <div
+              class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
+            >
+              <h3 class="mt-6 text-gray-200/90 text-lg">
+                Education for Empowerment:               </h3>
+              <p
+                class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
+              >NIIAT's social innovation initiatives emphasize education and skill development as pathways to empowerment. It offers programs that equip individuals with the digital and technical skills needed to improve their employability and quality of life. 
+              </p>
+            </div>
+            <div
+              class="   rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
+            >
+              <h3 class="mt-6 text-gray-200/90 text-lg">
+                Sustainable Community Development:               </h3>
+              <p
+                class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
+              >
+              NIIAT supports projects related to sustainable community development, including renewable energy, waste management, and environmentally responsible practices. These initiatives aim to create environmentally friendly and self-reliant communities. 
+              </p>
+            </div>
+
+            <div
+              class="   rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
+            >
+              <h3 class="mt-6 text-gray-200/90 text-lg">
+                Social Entrepreneurship Support: 
+              </h3>
+              <p
+                class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
+              >
+              NIIAT provides resources and mentorship to social entrepreneurs and startups with innovative solutions to societal challenges. It encourages and empowers those who are creating ventures with a social impact. 
+              </p>
+            </div>
+            <div
+              class="   rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
+            >
+              <h3 class="mt-6 text-gray-200/90 text-lg">
+                Engaged Citizenship:               </h3>
+              <p
+                class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
+              >
+              NIIAT fosters engaged citizenship by educating communities on their rights and responsibilities in the digital age. It encourages active participation in decision-making that affects the community's welfare. 
+              </p>
+            </div>
+            <div
+              class="    rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
+            >
+              <h3 class="mt-6 text-gray-200/90 text-lg">
+                Data-Driven Decision-Making: 
+              </h3>
+              <p
+                class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
+              >
+              NIIAT employs data collection and analysis to inform its social innovation initiatives. This data-driven approach ensures that programs are evidence-based and effective. 
+              </p>
+            </div>
+            <div
+              class="   rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
+            >
+              <h3 class="mt-6 text-gray-200/90 text-lg">
+                Public-Private Partnerships
+              </h3>
+              <p
+                class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
+              >
+              NIIAT forges partnerships with public and private entities to enhance the impact of social innovation initiatives. These partnerships help mobilize resources and expertise to address societal challenges. 
+              </p>
+            </div>
+         
+        </div>
+        
+        <div
+          class="absolute bottom-0 left-0 z-0 h-1/3 w-full border-b"
+          style="
+            background-image: linear-gradient(
+              to right top,
+              rgba(79, 70, 229, 0.2) 0%,
+              transparent 50%,
+              transparent 100%
+            );
+            border-color: rgba(92, 79, 240, 0.2);
+          "
+        ></div>
+        <div
+          class="absolute bottom-0 right-0 z-0 h-1/3 w-full"
+          style="
+            background-image: linear-gradient(
+              to left top,
+              rgba(220, 38, 38, 0.2) 0%,
+              transparent 50%,
+              transparent 100%
+            );
+            border-color: rgba(92, 79, 240, 0.2);"
+        ></div>
+        </div>
+      </section>
+    </div>
 
 
+    <!-- Projects :  -->
+    <div class="relative overflow-hidden   mt-10">
+      <h2
+        class="block w-full mb-20 ml-6 bg-gradient-to-b from-white/40 to-gray-400/20 bg-clip-text font-bold text-transparent text-3xl sm:text-7xl"
+      >
+       Project
+      </h2>
 
+      
 
+          
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</body>
 
 
     <script>
-
       gsap.fromTo(
         ".h1",
         { y: 100, opacity: 0 },
@@ -152,16 +437,15 @@
         { y: 0, opacity: 1, stagger: 0.5, duration: 2, ease: "out" }
       );
       gsap.fromTo(
-        ".btn",{y: 100,opacity: 0,},
-        {y: 0,opacity: 1,stagger: 1,duration: 3,ease: "out",
-        });
-        gsap.fromTo(
-        ".text-white",{x: 30,},
-        {x: 0,stagger: 1,duration: 2,ease: "in",
-        });
-        gsap.registerPlugin(ScrollTrigger);
-
+        ".btn",
+        { y: 100, opacity: 0 },
+        { y: 0, opacity: 1, stagger: 1, duration: 3, ease: "out" }
+      );
+      gsap.fromTo(
+        ".svg",
+        { x: 30 },
+        { x: 0, stagger: 1, duration: 2, ease: "in" }
+      );
     </script>
-
   </body>
 </html>
