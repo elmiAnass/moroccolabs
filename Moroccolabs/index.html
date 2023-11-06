@@ -3,22 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="./asset/js/script.js"></script>
+    <title>NIIAT</title>
+    <link rel="icon" type="image/x-icon" href="./asset/images/Logo.png">
+
     <link
       href="https://fonts.googleapis.com/css?family=Lato:400,400i|Roboto:500"
       rel="stylesheet"
     />
     <script src="https://kit.fontawesome.com/48764efa36.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <link rel="stylesheet" href="dist/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -32,15 +29,16 @@
     </script>
     <link rel="stylesheet" href="./asset/css/style.css" />
   </head>
-  <bod class="bg-black ">
+
+  <body >
     <header class="header">
       <nav>
         <div class="logo">
           <a href="index.html">
             <img
               src="./asset//images/bg.png"
-              width="275"
-              height="200"
+              width="305"
+              height="120"
               alt=""
               class="bg-cover"
             />
@@ -49,17 +47,24 @@
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <ul class="menu">
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Project </a></li>
-          <li><a href="#">Blog </a></li>
-          <li><a href="#">Our Engineering Teams </a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#project">Project </a></li>
+          <li><a href="#blog">Blog </a></li>
+          <li><a href="#sos">The social innovation initiatives</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
 
+
+
+
+
+
+    
     <!-- hero -->
-    <div class="bg-black h-[40rem] bg-black">
+    
+    <div class="bg-black h-[39rem] bg-black">
       <div class="mx-auto max-w-7xl pt-20 sm:pt-36">
         <div class="space-y-8 lg:space-y-0">
           <div class="px-6 md:mx-auto">
@@ -67,17 +72,17 @@
               <div class="space-y-10">
                 <div class="space-y-2">
                   <h1
-                    class="h1 text-5xl font-bold tracking-tight text-white sm:text-5xl md:text-7xl"
+                    class="h1 text-5xl font-bold tracking-tight text-white/80 sm:text-5xl md:text-7xl"
                   >
-                    <span class="sm:text-6xl"> </span> National Institute of
-                    <span
-                      class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-600"
+                    <span class="sm:text-6xl "> </span> National Institute of
+                    <span 
+                      class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-400/50 to-white"
                     >
                       Innovation
                     </span>
                     and Advanced
                     <span
-                      class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-green-600"
+                      class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-green-600 opacity-70"
                     >
                       Technology
                     </span>
@@ -94,12 +99,18 @@
                   promoting innovation, advancing technology, and empowering
                   communities to create positive change and improve lives.
                 </p>
-
-                <a href="#_" class="relative inline-block text-lg group mt-12">
+                <a href="#about" class="relative inline-block text-lg group mt-12 font-bold text-white">
                   <button class="btn">SEE MORE</button>
-                </a>
-                <div
-                  class="svg text-white opacity-5 md:opacity-5 xl:opacity-40 absolute right-28 bottom-20 p-28"
+                </a>  <a href="#about" aria-label="Scroll down"
+          class="flex  items-center justify-center w-10 h-10 mx-auto text-white duration-300 transform border border-gray-400 rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12"  height="12" viewBox="0 0 12 12" fill="currentColor">
+              <path
+                  d="M10.293,3.293,6,7.586,1.707,3.293A1,1,0,0,0,.293,4.707l5,5a1,1,0,0,0,1.414,0l5-5a1,1,0,1,0-1.414-1.414Z">
+              </path>
+          </svg>
+      </a>
+                <div 
+                  class="svg text-white opacity-5 md:opacity-5 xl:opacity-20 absolute right-28 bottom-20 p-28"
                   style="
                     background-image: url(./asset/images/tech.svg);
                     background-repeat: no-repeat;
@@ -108,87 +119,89 @@
               </div>
             </div>
           </div>
+        <div id="about"></div>
+
         </div>
       </div>
     </div>
     
     <!-- hero -->
-
     <!--  About us -->
-    <div class="content">
-      <h1 class="title">
-        About us
-        <div class="aurora">
-          <div class="aurora__item"></div>
-          <div class="aurora__item"></div>
-          <div class="aurora__item"></div>
-          <div class="aurora__item"></div>
-        </div>
-      </h1>
-    </div>
-    <main class="bg-black">
-      <div class="mx-auto max-w-7xl mt-4 p-1 sm:mt-8">
-        <h1
-          class="text-2xl font-bold text-white sm:text-2xl md:text-2xl opacity-90 mb-4"
-        >
-          The National Institute of Innovation and Advanced Technology
-        </h1>
-        <p class="text-base text-white/50 max-w-6xl text-base mb-6">
-          The National Institute of Innovation and Advanced Technology (NIIAT)
-          is a dynamic and forward-thinking organization dedicated to fostering
-          innovation, advancing technology, and empowering communities. At
-          NIIAT, we are driven by a mission to harness the power of innovation
-          and cutting-edge technology to bring about positive change and improve
-          the lives of individuals and communities.
-          <br /><span class="border-b border-red-500">Our Mission: </span>"To
-          empower individuals and communities through innovation and advanced
-          technology, driving positive change, fostering economic growth, and
-          ensuring sustainable development."
-        </p>
-        <div>
-          <img
-            src="./asset/images/Logo.png"
-            alt=""
-            width="120"
-            class="float-right"
-          />
-        </div>
-      </div>
-      <div class="border-b border-white/20"></div>
+    <div class=" px-6 mx-auto pattern" >
+      <div class="flex flex-col items-center  lg:h-[36rem] ">
+          <div>
+              <h2 class="abouts text-3xl  text-gray-100 lg:text-4xl sm:mt-24">About The National Institute of Innovation and Advanced Technology :</h2>
 
-      <div class="mx-auto max-w-7xl mt-4 p-1 sm:mt-8">
-        <h1
-          class="text-2xl font-bold text-white sm:text-2xl md:text-2xl opacity-90 mb-4"
-        >
-          Key Aspects of the National Institute of Innovation and Advanced
-          Technology
-        </h1>
-        <p class="text-base text-white/50 max-w-6xl text-base mb-6">
-          Innovation Hub: NIIAT serves as an innovation hub, where creativity
-          and technology intersect to address pressing challenges. We encourage
-          out-of-the-box thinking and the development of groundbreaking
-          solutions that make a real impact. Cutting-Edge Technology: We are
-          committed to staying at the forefront of technological advancements.
-          Our organization embraces emerging technologies and ensures that they
-          are accessible to those who can benefit from them the most. Empowering
-          Communities: NIIAT focuses on the empowerment of communities,
-          particularly underserved and marginalized populations. We believe in
-          the potential of technology to bridge gaps and create opportunities
-          for all. Education and Skill Development: Education is a cornerstone
-          of our work. We provide educational programs and training to equip
-          individuals with the knowledge and skills needed for the digital age,
-          fostering lifelong learning. Sustainable Practices: Sustainability is
-          embedded in our ethos. We emphasize environmentally responsible
-          practices and support initiatives that promote a greener and more
-          sustainable future. Global Impact: While rooted in our local
-          community, NIIAT also has a global perspective. We seek to collaborate
-          with organizations and institutions worldwide to share knowledge,
-          expertise, and best practices. Collaborative Partnerships: We believe
-          in the power of partnerships. NIIAT collaborates with non-governmental
-          organizations, government agencies, businesses, and educational
-          institutions to achieve our mission.
-        </p>
+              <p class="pr mt-4 text-gray-100 opacity-40 lg:max-w-6xl mb-12 text-justify sm:mt-12">
+                The National Institute of Innovation and Advanced Technology (NIIAT) is a dynamic and forward-thinking organization dedicated to fostering innovation, advancing technology, and empowering communities. At NIIAT, we are driven by a mission to harness the power of innovation and cutting-edge technology to bring about positive change and improve the lives of individuals and communities.
+<br/> Our Mission: "To empower individuals and communities through innovation and advanced technology, driving positive change, fostering economic growth, and ensuring sustainable development."
+              </p>            
+              <div class="wrapper opacity-70">
+                <a class="button" href="https://www.linkedin.com/company/niiat/posts/?feedView=all" target="_blank">
+                   <div class="icon">
+                      <i class="fab fa-linkedin"></i>
+                   </div>
+                   <span>Linkedin</span>
+                </a>
+            
+             </div>
+          
+          </div>
+
+          <div class="flex mt-8 lg:w-1/2 lg:justify-end lg:mt-0">
+              <div class="w-full max-w-md bg-white rounded-lg dark:bg-gray-800">
+                 
+              </div>
+          </div>
       </div>
+  </div>
+    
+    <main id="blog">
+      <div class="relative bg-black">
+        <div class="absolute inset-x-0 bottom-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="absolute " viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,0L60,26.7C120,53,240,107,360,122.7C480,139,600,117,720,101.3C840,85,960,75,1080,85.3C1200,96,1320,128,1380,144L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>        </div>
+        <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+     <div class="svgl">
+          <svg height="504" viewBox="0 0 776.525 1033.804" width="777" class="absolute left-[-28rem] opacity-10" xmlns="http://www.w3.org/2000/svg"><path d="m589.24 41.966c-132.896-97.865-454.912-14.104-547.318 163.223-43.016 82.548-63.796 164.446-5.811 283.065 52.586 107.575 176.167 174.007 176.167 174.007l-45.047 156.918c-8.851 27.759 10.697 131.268 141.656 186.751 139.934 59.286 236.493 9.077 247.625-26.826 15.61-50.345 56.927-187.876 56.927-187.876s59.342-14.057 94.937-43.344c41.937-34.505 61.505-224.139 61.505-224.139l-11.11-65.07s19.555-20.951 17.027-41.169c-4.946-39.571-65.416-137.662-65.416-137.662s-9.715-155.821-121.144-237.878z" fill="#eff3fe"/><path d="m432.467 1033.858c-33.219 0-74.766-6.703-123.774-27.467-71.059-30.106-106.38-73.167-123.498-103.99-20.985-37.784-22.524-70.561-18.439-83.374l44.933-156.519c-3.55-1.95-33.145-18.492-68.086-46.52-34.226-27.454-80.735-71.861-107.94-127.514-27.136-55.509-38.591-106.313-35.02-155.315 2.919-40.069 15.514-79.607 40.836-128.201 45.969-88.217 155.146-161.71 284.925-191.801 106.938-24.795 205.307-14.177 263.134 28.406 57.666 42.466 87.588 104.986 102.535 149.955 15.732 47.334 18.629 85.681 18.802 88.169 2.293 3.737 60.591 99.109 65.422 137.757 2.401 19.209-15.072 39.255-16.989 41.387l11.068 64.83c.007.045.009.09.004.135-.049.474-5.01 48.023-15.032 99.175-13.473 68.757-29.168 110.913-46.652 125.299-34.025 27.996-90.371 42.272-94.858 43.376-2.084 6.937-41.745 138.904-56.846 187.606-4.232 13.651-19.889 27.897-41.88 38.108-14.207 6.596-42.275 16.496-82.644 16.497zm3.543-1032.877c-34.405 0-71.343 4.331-109.381 13.151-129.502 30.026-238.425 103.323-284.264 191.288-44.585 85.557-62.634 166.36-5.806 282.615 27.121 55.48 73.511 99.773 107.651 127.16 37.007 29.687 67.995 46.46 68.304 46.625.208.111.31.352.244.578l-45.047 156.918c-4.036 12.661-2.475 45.091 18.356 82.598 17.042 30.686 52.218 73.56 123.015 103.555 108.197 45.841 179.83 22.952 205.606 10.984 21.739-10.094 37.195-24.112 41.346-37.497 15.431-49.767 56.513-186.497 56.926-187.872.051-.171.189-.302.363-.343.593-.14 59.64-14.367 94.735-43.243 41.01-33.743 60.85-219.279 61.317-223.737l-11.098-65.002c-.026-.154.021-.311.128-.425.193-.208 19.365-21.016 16.896-40.766-4.876-39.012-64.741-136.482-65.346-137.462-.043-.07-.068-.149-.073-.231-.024-.389-2.615-39.476-18.771-88.068-14.901-44.823-44.724-107.135-102.171-149.439-37.05-27.286-90.861-41.387-152.93-41.387z" fill="#333"/><path d="m432.467 1033.858c-33.219 0-74.766-6.703-123.774-27.467-71.059-30.106-106.38-73.167-123.498-103.99-20.985-37.784-22.524-70.561-18.439-83.374l44.933-156.519c-3.55-1.95-33.145-18.492-68.086-46.52-34.226-27.454-80.735-71.861-107.94-127.514-27.136-55.509-38.591-106.313-35.02-155.315 2.919-40.069 15.514-79.607 40.836-128.201 45.969-88.217 155.146-161.71 284.925-191.801 106.938-24.795 205.307-14.177 263.134 28.406 57.666 42.466 87.588 104.986 102.535 149.955 15.732 47.334 18.629 85.681 18.802 88.169 2.293 3.737 60.591 99.109 65.422 137.757 2.401 19.209-15.072 39.255-16.989 41.387l11.068 64.83c.007.045.009.09.004.135-.049.474-5.01 48.023-15.032 99.175-13.473 68.757-29.168 110.913-46.652 125.299-34.025 27.996-90.371 42.272-94.858 43.376-2.084 6.937-41.745 138.904-56.846 187.606-4.232 13.651-19.889 27.897-41.88 38.108-14.207 6.596-42.275 16.496-82.644 16.497zm3.543-1032.877c-34.405 0-71.343 4.331-109.381 13.151-129.502 30.026-238.425 103.323-284.264 191.288-44.585 85.557-62.634 166.36-5.806 282.615 27.121 55.48 73.511 99.773 107.651 127.16 37.007 29.687 67.995 46.46 68.304 46.625.208.111.31.352.244.578l-45.047 156.918c-4.036 12.661-2.475 45.091 18.356 82.598 17.042 30.686 52.218 73.56 123.015 103.555 108.197 45.841 179.83 22.952 205.606 10.984 21.739-10.094 37.195-24.112 41.346-37.497 15.431-49.767 56.513-186.497 56.926-187.872.051-.171.189-.302.363-.343.593-.14 59.64-14.367 94.735-43.243 41.01-33.743 60.85-219.279 61.317-223.737l-11.098-65.002c-.026-.154.021-.311.128-.425.193-.208 19.365-21.016 16.896-40.766-4.876-39.012-64.741-136.482-65.346-137.462-.043-.07-.068-.149-.073-.231-.024-.389-2.615-39.476-18.771-88.068-14.901-44.823-44.724-107.135-102.171-149.439-37.05-27.286-90.861-41.387-152.93-41.387z" fill="#333"/><g fill="#171e26"><path d="m503.804 725.174c-35.285 1.639-83.924-1.001-118.94-6.888-15.215-2.558-46.325-6.432-72.618-32.239-17.585-17.259-70.851-87.695-70.851-87.695l-30.977 39.184s38.327 62.188 72.327 79.208c19.972 9.998 41.979 9.597 63.99 12.692 77.343 10.875 152.939 44.168 204.835 55.126 30.931 6.531 62.584 6.531 62.584 6.531 30.701-6.863 71.65-26.403 72.285-28.433 11.922-38.074-115.005-40.627-182.637-37.487z" opacity=".21"/><path d="m753.534 405.922c-20.876 6.745-43.287 14.877-76.445 35.461-6.981 4.334 1.142 12.96 7.701 15.958 4.967 2.271 73.728 1.481 73.728 1.481s17.508-17.95 17.479-38.801c-.002-1.532-5.225-19.67-22.462-14.1z" opacity=".21"/></g></svg>
+    </div> 
+ <div class="relative max-w-2xl sm:mx-auto sm:max-w-xl md:max-w-4xl ">
+              <h2
+              class="abouts block mb-6 w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-5xl"
+            >
+            Key Aspects of the National Institute of Innovation and Advanced
+            Technology
+            </h2>                           
+
+                <p class="pr mb-6 text-justify text-base text-white/50 md:text-md">
+                  Innovation Hub: NIIAT serves as an innovation hub, where creativity
+                  and technology intersect to address pressing challenges. We encourage
+                  out-of-the-box thinking and the development of groundbreaking
+                  solutions that make a real impact. Cutting-Edge Technology: We are
+                  committed to staying at the forefront of technological advancements.
+                  Our organization embraces emerging technologies and ensures that they
+                  are accessible to those who can benefit from them the most. Empowering
+                  Communities: NIIAT focuses on the empowerment of communities,
+                  particularly underserved and marginalized populations. We believe in
+                  the potential of technology to bridge gaps and create opportunities
+                  for all. Education and Skill Development: Education is a cornerstone
+                  of our work. We provide educational programs and training to equip
+                  individuals with the knowledge and skills needed for the digital age,
+                  fostering lifelong learning. Sustainable Practices: Sustainability is
+                  embedded in our ethos. We emphasize environmentally responsible
+                  practices and support initiatives that promote a greener and more
+                  sustainable future. Global Impact: While rooted in our local
+                  community, NIIAT also has a global perspective. We seek to collaborate
+                  with organizations and institutions worldwide to share knowledge,
+                  expertise, and best practices. Collaborative Partnerships: We believe
+                  in the power of partnerships. NIIAT collaborates with non-governmental
+                  organizations, government agencies, businesses, and educational
+                  institutions to achieve our mission.
+                </p>
+
+            </div>
+        </div>
+    </div>
+      <div class="border-b border-black/20" ></div>
     </main>
     <!--  -->
     <svg
@@ -197,21 +210,21 @@
       viewBox="0 0 1440 320"
     >
       <path
-        fill="#1e293b"
+        fill="#000"
         fill-opacity="1"
         d="M0,64L48,58.7C96,53,192,43,288,58.7C384,75,480,117,576,149.3C672,181,768,203,864,181.3C960,160,1056,96,1152,101.3C1248,107,1344,181,1392,218.7L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
       ></path>
     </svg>
     <section
-      class="bg-[#1e293b]/40 md:p-0 transform duration-500 hover:shadow-2xl cursor-pointer hover:-translate-y-1 mt-12"
+      class="bg-black md:p-0 transform duration-500 hover:shadow-2xl cursor-pointer hover:-translate-y-1 mt-12"
     >
       <img
-        class="xl:max-w-6xl"
+        class="xl:max-w-6xl imgs"
         src="https://media.licdn.com/dms/image/D5622AQEhOX_uLg7XrA/feedshare-shrink_1280/0/1695508197696?e=1701907200&v=beta&t=PGl3WszSuQS7sEdvHWj-Qo8FZ_-HotMMGFwhTRURFk8"
         alt=""
       />
       <div
-        class="overflow-hidden bg-black border-1 border-white/40 p-2 pt-8 md:p-12 pb-12 lg:max-w-2xl w-full lg:absolute top-36 right-5 rounded-lg"
+        class="vision overflow-hidden bg-black border-1 border-white/40 p-2 pt-8 md:p-12 pb-12 lg:max-w-2xl w-full lg:absolute top-36 right-5 rounded-lg"
       >
         <div class="content">
           <h1 class="title">
@@ -224,7 +237,7 @@
             </div>
           </h1>
         </div>
-        <p class="font-sm text-white text-justify">
+        <p class="font-sm text-white/70 text-justify">
           The vision statement for the National Institute of Innovation and
           Advanced Technology reflects the organization's aspirations, long-term
           goals, and the impact it seeks to achieve. Here's a vision statement
@@ -241,19 +254,19 @@
       </div>
     </section>
     <!-- The social innovation initiatives  -->
-    <div class="bg-black overflow-hidden ">
+    <div class="bg-black overflow-hidden " id="sos">
       <section
         id="features"
         class="relative block px-6 py-10 md:py-20 md:px-10 border-t border-b border-neutral-900 bg-neutral-900/30"
       >
         <div class="relative mx-auto max-w-5xl text-center">
-          <h2
-            class="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl"
+          <h2 
+            class="abouts block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl"
           >
             The social innovation initiatives
           </h2>
           <p
-            class="mx-auto my-4 w-full text-justify max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400"
+            class="abouts mx-auto my-4 w-full text-justify max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400"
           >
             The social innovation initiatives of the National Institute of
             Innovation and Advanced Technology (NIIAT) aim to drive positive
@@ -261,66 +274,74 @@
             technology, and community engagement.
           </p>
         </div>
-
+   
         
-        <div
-          class="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3"
-        >
-          <div
-            class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
-          >
-            <h3 class="mt-6 text-gray-200/90 text-lg">
-              Digital Inclusion Programs:             </h3>
-            <p
-              class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
-            >
-            NIIAT promotes digital inclusion by providing technology access and training to underserved communities. This includes initiatives to bridge the digital divide by making digital tools and education accessible to all. 
-            </p>
-          </div>
-
-          <div
-            class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
-          >
-            <h3 class="mt-6 text-gray-200/90 text-lg">
-              Technological Solutions for Social Issues:
-            </h3>
-            <p
-              class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
-            >
-            NIIAT develops and supports projects that use technology to address social issues, such as healthcare access, environmental sustainability, and poverty reduction. This includes developing apps, platforms, and systems that positively impact society. 
-
- 
-            </p>
-          </div>
-
-          <div
-            class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
-          >
-            <h3 class="mt-6 text-gray-200/90 text-lg">
-              Community-Centered Innovation:
-            </h3>
-            <p
-              class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
-            >
-              NIIAT collaborates closely with local communities to identify
-              their unique challenges and needs. It actively engages community
-              members in innovation, ensuring that solutions are relevant and
-              beneficial.
-            </p>
-          </div>
-
-          
-            <div
+        <div class="wrappers">
+          <i class="fas fa-chevron-left"></i>
+                    <ul class="carousel">
+            <li class="card">
+              <div
               class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
             >
               <h3 class="mt-6 text-gray-200/90 text-lg">
-                Education for Empowerment:               </h3>
+                Digital Inclusion Programs:             </h3>
               <p
                 class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
-              >NIIAT's social innovation initiatives emphasize education and skill development as pathways to empowerment. It offers programs that equip individuals with the digital and technical skills needed to improve their employability and quality of life. 
+              >
+              NIIAT promotes digital inclusion by providing technology access and training to underserved communities. This includes initiatives to bridge the digital divide by making digital tools and education accessible to all. 
               </p>
             </div>
-            <div
+  
+            </li>
+            <li class="card">
+              <div
+              class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
+            >
+              <h3 class="mt-6 text-gray-200/90 text-lg">
+                Technological Solutions for Social Issues:
+              </h3>
+              <p
+                class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
+              >
+              NIIAT develops and supports projects that use technology to address social issues, such as healthcare access, environmental sustainability, and poverty reduction. This includes developing apps, platforms, and systems that positively impact society. 
+  
+   
+              </p>
+            </div>
+            </li>
+            <li class="card">
+           
+              <div
+              class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
+            >
+              <h3 class="mt-6 text-gray-200/90 text-lg">
+                Community-Centered Innovation:
+              </h3>
+              <p
+                class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
+              >
+                NIIAT collaborates closely with local communities to identify
+                their unique challenges and needs. It actively engages community
+                members in innovation, ensuring that solutions are relevant and
+                beneficial.
+              </p>
+            </div>
+            </li>
+            <li class="card">
+               
+              <div
+                class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
+              >
+                <h3 class="mt-6 text-gray-200/90 text-lg">
+                  Education for Empowerment:               </h3>
+                <p
+                  class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
+                >NIIAT's social innovation initiatives emphasize education and skill development as pathways to empowerment. It offers programs that equip individuals with the digital and technical skills needed to improve their employability and quality of life. 
+                </p>
+              </div>
+            </li>
+            <li class="card">
+              <div
               class="   rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
             >
               <h3 class="mt-6 text-gray-200/90 text-lg">
@@ -331,8 +352,9 @@
               NIIAT supports projects related to sustainable community development, including renewable energy, waste management, and environmentally responsible practices. These initiatives aim to create environmentally friendly and self-reliant communities. 
               </p>
             </div>
-
-            <div
+            </li>
+            <li class="card">
+              <div
               class="   rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
             >
               <h3 class="mt-6 text-gray-200/90 text-lg">
@@ -344,7 +366,9 @@
               NIIAT provides resources and mentorship to social entrepreneurs and startups with innovative solutions to societal challenges. It encourages and empowers those who are creating ventures with a social impact. 
               </p>
             </div>
-            <div
+            </li>
+            <li class="card">
+              <div
               class="   rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
             >
               <h3 class="mt-6 text-gray-200/90 text-lg">
@@ -355,7 +379,9 @@
               NIIAT fosters engaged citizenship by educating communities on their rights and responsibilities in the digital age. It encourages active participation in decision-making that affects the community's welfare. 
               </p>
             </div>
-            <div
+            </li>
+            <li class="card">
+              <div
               class="    rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
             >
               <h3 class="mt-6 text-gray-200/90 text-lg">
@@ -367,21 +393,24 @@
               NIIAT employs data collection and analysis to inform its social innovation initiatives. This data-driven approach ensures that programs are evidence-based and effective. 
               </p>
             </div>
-            <div
-              class="   rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
-            >
-              <h3 class="mt-6 text-gray-200/90 text-lg">
-                Public-Private Partnerships
-              </h3>
-              <p
-                class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
+            </li>
+            <li class="card">
+                <div
+                class="   rounded-md border border-neutral-800 bg-neutral-900/50 p-8 shadow"
               >
-              NIIAT forges partnerships with public and private entities to enhance the impact of social innovation initiatives. These partnerships help mobilize resources and expertise to address societal challenges. 
-              </p>
-            </div>
-         
+                <h3 class="mt-6 text-gray-200/90 text-lg">
+                  Public-Private Partnerships
+                </h3>
+                <p
+                  class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400"
+                >
+                NIIAT forges partnerships with public and private entities to enhance the impact of social innovation initiatives. These partnerships help mobilize resources and expertise to address societal challenges. 
+                </p>
+              </div>
+            </li>
+          </ul>
+          <i class="fas fa-angle-right"></i>        
         </div>
-        
         <div
           class="absolute bottom-0 left-0 z-0 h-1/3 w-full border-b"
           style="
@@ -411,21 +440,256 @@
 
 
     <!-- Projects :  -->
-    <div class="relative overflow-hidden   mt-10">
+    <div class=" relative overflow-hidden   mt-10" id="project">
       <h2
-        class="block w-full mb-20 ml-6 bg-gradient-to-b from-white/40 to-gray-400/20 bg-clip-text font-bold text-transparent text-3xl sm:text-7xl"
+        class="abouts block w-full mb-20 ml-6 bg-gradient-to-b from-white/40 to-gray-400/20 bg-clip-text font-bold text-transparent text-3xl sm:text-7xl"
       >
        Project
       </h2>
+      <div class="max-w-screen-xl mx-auto p-5 sm:p-10 
+      ">
 
-      
+        <div class="border-b mb-5 flex justify-between text-sm">
+            <div class="text-indigo-600 flex items-center pb-2 pr-2 border-b-2 border-indigo-600 uppercase">
+                <svg class="h-6 mr-3" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.005 455.005"
+                    style="enable-background:new 0 0 455.005 455.005;" xml:space="preserve">
+                    <g>
+                        <path d="M446.158,267.615c-5.622-3.103-12.756-2.421-19.574,1.871l-125.947,79.309c-3.505,2.208-4.557,6.838-2.35,10.343 c2.208,3.505,6.838,4.557,10.343,2.35l125.947-79.309c2.66-1.675,4.116-1.552,4.331-1.432c0.218,0.12,1.096,1.285,1.096,4.428 c0,8.449-6.271,19.809-13.42,24.311l-122.099,76.885c-6.492,4.088-12.427,5.212-16.284,3.084c-3.856-2.129-6.067-7.75-6.067-15.423 c0-19.438,13.896-44.61,30.345-54.967l139.023-87.542c2.181-1.373,3.503-3.77,3.503-6.347s-1.323-4.974-3.503-6.347L184.368,50.615 c-2.442-1.538-5.551-1.538-7.993,0L35.66,139.223C15.664,151.815,0,180.188,0,203.818v4c0,23.63,15.664,52.004,35.66,64.595 l209.292,131.791c3.505,2.207,8.136,1.154,10.343-2.35c2.207-3.505,1.155-8.136-2.35-10.343L43.653,259.72 C28.121,249.941,15,226.172,15,207.818v-4c0-18.354,13.121-42.122,28.653-51.902l136.718-86.091l253.059,159.35l-128.944,81.196 c-20.945,13.189-37.352,42.909-37.352,67.661c0,13.495,4.907,23.636,13.818,28.555c3.579,1.976,7.526,2.956,11.709,2.956 c6.231,0,12.985-2.176,19.817-6.479l122.099-76.885c11.455-7.213,20.427-23.467,20.427-37.004 C455.004,277.119,451.78,270.719,446.158,267.615z"> </path>
+                        <path d="M353.664,232.676c2.492,0,4.928-1.241,6.354-3.504c2.207-3.505,1.155-8.136-2.35-10.343l-173.3-109.126 c-3.506-2.207-8.136-1.154-10.343,2.35c-2.207,3.505-1.155,8.136,2.35,10.343l173.3,109.126 C350.916,232.303,352.298,232.676,353.664,232.676z"> </path>
+                        <path d="M323.68,252.58c2.497,0,4.938-1.246,6.361-3.517c2.201-3.509,1.14-8.138-2.37-10.338L254.46,192.82 c-3.511-2.202-8.139-1.139-10.338,2.37c-2.201,3.51-1.14,8.138,2.37,10.338l73.211,45.905 C320.941,252.21,322.318,252.58,323.68,252.58z"> </path>
+                        <path d="M223.903,212.559c-3.513-2.194-8.14-1.124-10.334,2.39c-2.194,3.514-1.124,8.14,2.39,10.334l73.773,46.062 c1.236,0.771,2.608,1.139,3.965,1.139c2.501,0,4.947-1.251,6.369-3.529c2.194-3.514,1.124-8.14-2.39-10.334L223.903,212.559z"> </path>
+                        <path d="M145.209,129.33l-62.33,39.254c-2.187,1.377-3.511,3.783-3.503,6.368s1.345,4.983,3.54,6.348l74.335,46.219 c1.213,0.754,2.586,1.131,3.96,1.131c1.417,0,2.833-0.401,4.071-1.201l16.556-10.7c3.479-2.249,4.476-6.891,2.228-10.37 c-2.248-3.479-6.891-4.475-10.37-2.228l-12.562,8.119l-60.119-37.38l48.2-30.355l59.244,37.147l-6.907,4.464 c-3.479,2.249-4.476,6.891-2.228,10.37c2.249,3.479,6.894,4.476,10.37,2.228l16.8-10.859c2.153-1.392,3.446-3.787,3.429-6.351 c-0.018-2.563-1.344-4.94-3.516-6.302l-73.218-45.909C150.749,127.792,147.647,127.795,145.209,129.33z"> </path>
+                        <path d="M270.089,288.846c2.187-3.518,1.109-8.142-2.409-10.329l-74.337-46.221c-3.518-2.188-8.143-1.109-10.329,2.409 c-2.187,3.518-1.109,8.142,2.409,10.329l74.337,46.221c1.232,0.767,2.601,1.132,3.953,1.132 C266.219,292.387,268.669,291.131,270.089,288.846z"> </path>
+                        <path d="M53.527,192.864c-2.187,3.518-1.109,8.142,2.409,10.329l183.478,114.081c1.232,0.767,2.601,1.132,3.953,1.132 c2.506,0,4.956-1.256,6.376-3.541c2.187-3.518,1.109-8.142-2.409-10.329L63.856,190.455 C60.338,188.266,55.714,189.346,53.527,192.864z"> </path>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    
+    
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+    
+            <!-- CARD 1 -->
+            <div class="card1 rounded overflow-hidden shadow-lg flex flex-col">
+                <a href="#"></a>
+                <div class="relative"><a href="https://islah.city/" target="_blank">
+                        <img class="w-full"
+                            src="./asset/images/city.png"
+                            alt="Sunset in the mountains">
+                        <div
+                            class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                        </div>
+                    </a>
+                    <a href="https://islah.city/"  target="_blank">
+                        <div
+                            class="text-xs absolute top-0 right-0 bg-green-600 px-4 py-2 text-white mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                            Islah City
+                        </div>
+                    </a>
+                </div>
+                <div class="px-6 py-4 mb-auto">
+                    <a href="https://islah.city/"  target="_blank"
+                        class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">
+                        Islah City</a>
+                    <p class="text-gray-500 text-sm">
+                      In support of improved public policies and inclusive decision making an online tool is created for civic monitoring of Casablanca municipality activities on solving city problems based on direct reporting from affected citizens.                     </p>
+                </div>
+                <div class="px-6 py-3 flex flex-row items-center justify-between bg-gray-100">
+                    <a href="https://islah.city/" target="_blank"  class="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center">
+                       
+                        <span class="ml-1">see more </span>
+                    </a>
+    
+                    <a href="https://islah.city/" target="_blank" class="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center">
+                      
+                        <span class="ml-1">Visit Website</span>
+                    </a>
+                </div>
+            </div>
+    
+    
+    
+            <!-- CARD 2 -->
+            <div class=" card2 rounded overflow-hidden shadow-lg flex flex-col">
+                <a href="#"></a>
+                <div class="relative"><a href="#">
+                        <img class="w-full"
+                            src="./asset//images/Morocco labs.jpg"
+                            alt="Sunset in the mountains">
+                        <div
+                            class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                        </div>
+                    </a><a href="#!">
+                        <div
+                            class="text-xs absolute top-0 right-0 bg-red-600 px-4 py-2 text-white mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                            MorrocoLabs
+                        </div>
+                    </a>
+                </div>
+                <div class="px-6 py-4 mb-auto">
+                    <a href="#"
+                        class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2"
+                        >Morocco Labs </a>
+                    <p class="text-gray-500 text-sm">
+                      The organizational structure of the National Institute of Innovation and Advanced Technology (NIIAT) specialized labs and departments, each focusing on specific areas of innovation and technology                    </p>
+                </div>
+                <div class="px-6 py-3 flex flex-row items-center justify-between bg-gray-100">
+                    <a href="#" class="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center">
+                       
+                        <span class="ml-1"> see More</span>
+                    </a>
+    
+                    <a href="#" class="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center">
+                        
+                        <span class="ml-1"> Visit Now </span>
+                    </a>
+                </div>
+            </div>
+    
+    
+            
+            <!-- CARD 3 -->
+            <div class="card3 rounded overflow-hidden shadow-lg flex flex-col">
+                <a href="#"></a>
+                <div class="relative"><a href="#">
+                        <img class="w-full"
+                            src="./asset//images/ma3an.png"
+                            alt="Sunset in the mountains">
+                        <div
+                            class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                        </div>
+                    </a><a href="#!">
+                        <div
+                            class="text-xs absolute top-0 right-0 bg-black px-4 py-2 text-white mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                            M33an.com 
+                        </div>
+                    </a>
+                </div>
+                <div class="px-6 py-4 mb-auto">
+                    <a href="#"
+                        class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">
+                        M33an
 
-          
+                      </a>
+                    <p class="text-gray-500 text-sm">
+                      The "M33an.com" application, a platform for discovering youth opportunities for Moroccan youth, aims primarily to enable young people to develop and enhance their abilities, as the " M33an.com " platform contains different categories of possibilities. 
+                    </p>
+                </div>
+                <div class="px-6 py-3 flex flex-row items-center justify-between bg-gray-100">
+                    <a href="#" class="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center">
+                     
+                        <span class="ml-1">See more</span>
+                    </a>
+    
+                    <a href="#" class="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center">
+                       
+                        <span class="ml-1">Visit Now</span>
+                    </a>
+                </div>
+            </div>
+    
+        </div>
+    
+    </div>
+    </div>
+    
+   
+
+
+<div class="h-screen bg-black grid grid-cols-1 ">
+  <div class="pt-10 md:pt-36 ">
+      <div class="p-4 md:p-8 ">
+          <h1 class=" text-white text-center pb-8 font-light text-4xl md:text-5xl lg:text-6xl">Contact Me</h1>
+          <form class="flex flex-col items-center" action="https://formbold.com/s/915QR" method="POST">
+              <div class="md:w-3/4 lg:w-2/3 xl:w-1/2">
+                  <div class="  flex flex-col md:flex-row">
+                      <input id="name" type="text" name="name"
+                          class=" my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full md:w-1/2 md:mr-2 outline-none focus:ring-2 focus:ring-blue-600"
+                          placeholder="Name">
+                      <input id="email" type="email" name="email"
+                          class=" my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full md:w-1/2 md:ml-2 outline-none focus:ring-2 focus:ring-blue-600"
+                          placeholder="Email">
+                  </div>
+                  <input id="subject" type="text" placeholder="Subject" name="subject"
+                      class="my-2  py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full outline-none focus:ring-2 focus:ring-blue-600">
+                  <textarea id="message" rows="5" placeholder="Typing Your Message" name="message"
+                      class=" my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+              </div>
+              <button
+                  class=" border-2 text-md mt-5 rounded-md py-2 px-4 bg-blue-600 hover:bg-blue-700 text-gray-100 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-600">
+                  Send Message
+              </button>
+          </form>
+                    
+
+<ul class="mb-6 md:mb-0 flex justify-center mt-12 sm:space-x-20">
+  <li class="flex">
+      <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="h-6 w-6">
+              <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+              <path
+                  d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z">
+              </path>
+          </svg>
+      </div>
+      <div class="ml-4 mb-4">
+          <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">LOCATION
+          </h3>
+          <p class="text-gray-600 dark:text-slate-400">158 Armée royal Etg 01 App 108  </p>
+          <p class="text-gray-600 dark:text-slate-400">casablanca</p>
+      </div>
+  </li>
+  <li class="flex">
+      <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="h-6 w-6">
+              <path
+                  d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
+              </path>
+              <path d="M15 7a2 2 0 0 1 2 2"></path>
+              <path d="M15 3a6 6 0 0 1 6 6"></path>
+          </svg>
+      </div>
+      <div class="ml-4 mb-4">
+          <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">CONTACT US
+          </h3>
+          <p class="text-gray-600 dark:text-slate-400">Mobile: + 212 646008005</p>
+          <p class="text-gray-600 dark:text-slate-400">Email: contact@moroccolabs.com</p>
+      </div>
+  </li>
+
+</ul>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
+<script src="./asset/js/script.js"></script>
 
     <script>
+   
+
       gsap.fromTo(
         ".h1",
         { y: 100, opacity: 0 },
